@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.book-card {
+  display: flex;
+}
+
+.cover-image{
+  max-height: 175px;
+}

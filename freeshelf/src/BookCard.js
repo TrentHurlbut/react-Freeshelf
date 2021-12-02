@@ -1,12 +1,13 @@
 
-function BookCard({ bookTitle, author, description }) {
+function BookCard({ bookTitle, author, description, image }) {
   return (
-    <div className="placeholder two-uneven-columns">
+    <div className="placeholder book-card">
       <div className="placeholder title-author-description">
         <h1>{bookTitle}</h1>
         <h3>{author}</h3>
         <p>{description}</p>
       </div>
+      <img src={image} alt={`${bookTitle} Cover`} className="cover-image" />
     </div>
   )
 }
