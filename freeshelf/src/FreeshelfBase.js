@@ -5,7 +5,16 @@ function FreeshelfBase() {
   let books = [];
 
   for (let i = 0; i < library.length; i++){
-    books.push(<BookCard bookTitle={library[i]["title"]} author={library[i]["author"]} description={library[i]["detailedDescription"]} image={library[i]["coverImageUrl"]} />)
+    books.push(<BookCard
+      bookTitle={library[i]["title"]}
+      author={library[i]["author"]}
+      description={library[i]["shortDescription"]}
+      image={library[i]["coverImageUrl"]}
+      url={library[i]["url"]}
+      publisher={library[i]["publisher"]}
+      pubDate={library[i]["publicationDate"]}
+      fullText={library[i]["detailedDescription"]}
+    />)
   }
 
   return (
