@@ -1,8 +1,4 @@
-import {
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-} from "@reach/disclosure";
+import Disclosure from "./Disclosure";
 
 function BookCard({ bookTitle, author, description, image, url, publisher, pubDate, fullText }) {
   return (
@@ -15,15 +11,7 @@ function BookCard({ bookTitle, author, description, image, url, publisher, pubDa
         </div>
         <img src={image} alt={`${bookTitle} Cover`} className="cover-image" />
       </div>
-      <Disclosure>
-        <DisclosureButton>More Information</DisclosureButton>
-        <DisclosurePanel>
-          <p><strong>URL:</strong> {url ? url : "Not available."}</p>
-          <p><strong>Publisher:</strong> {publisher ? publisher : "Not available."}</p>
-          <p><strong>Publication Date:</strong> {pubDate ? pubDate : "Not available."}</p>
-          <p><strong>Full Description:</strong><br></br>{fullText ? fullText : "Not available."}</p>
-        </DisclosurePanel>
-      </Disclosure>
+      <Disclosure url={url} publisher={publisher} pubDate={pubDate} fullText={fullText} />
     </div>
   )
 }
