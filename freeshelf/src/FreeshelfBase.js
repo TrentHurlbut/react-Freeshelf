@@ -14,6 +14,7 @@ function FreeshelfBase() {
       publisher={library[i]["publisher"]}
       pubDate={library[i]["publicationDate"]}
       fullText={library[i]["detailedDescription"]}
+      key={i}
     />)
   }
 
