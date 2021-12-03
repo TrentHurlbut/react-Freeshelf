@@ -6,9 +6,9 @@ import {
 
 function BookCard({ bookTitle, author, description, image, url, publisher, pubDate, fullText }) {
   return (
-    <div className="placeholder book-comp">
-      <div className="placeholder book-card">
-        <div className="placeholder title-author-description">
+    <div className="book-comp">
+      <div className="book-card">
+        <div className="title-author-description">
           <h1>{bookTitle}</h1>
           <h3>{author}</h3>
           <p>{description}</p>
